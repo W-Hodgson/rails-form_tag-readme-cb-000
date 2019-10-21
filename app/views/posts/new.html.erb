@@ -5,16 +5,16 @@
     <title>Post Form</title>
   </head>
   <body>
-    <form action="<%= posts_path %>" method="POST">
+    <%= form_tag posts_path do %>
       <label>Post title:</label><br>
       <input type="text" name="post[title]" id="post_title"><br>
 
       <label>Post description:</label><br>
       <textarea type="text" name="post[description]" id="post_description"></textarea><br>
 
-      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <input type="submit" value="Submit Post">
-    </form>
+    <% end %>
 
     <%= params.inspect %>
   </body>
