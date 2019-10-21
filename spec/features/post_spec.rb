@@ -19,6 +19,6 @@ describe 'new_post' do
     click_on 'Submit Post'
 
     expect(page.current_path).to eq(posts_path)
-    expect(page).to have_content
+    expect(page).to have_content('My post title')
   end
 end
