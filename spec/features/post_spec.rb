@@ -20,6 +20,6 @@ describe 'new_post' do
 
     expect(page.current_path).to eq(posts_path)
     expect(page).to have_content('My post title')
-    expect(page).to 
+    expect(page).to have_content()
   end
 end
