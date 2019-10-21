@@ -5,6 +5,16 @@
     <title>Post Form</title>
   </head>
   <body>
-    
+    <form>
+      <label>Post title:</label><br>
+      <input type="text" name="post[title]" id="post_title"><br>
+
+      <label>Post description:</label><br>
+      <textarea type="text" name="post[description]" id="post_description"></textarea><br>
+
+      <input type="submit" value="Submit Post">
+    </form>
+
+    <%= params.inspect %>
   </body>
 </html>
