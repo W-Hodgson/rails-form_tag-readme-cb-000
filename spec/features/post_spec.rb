@@ -7,7 +7,6 @@ describe 'new_post' do
   end
 
   it 'renders HTML in the /new template' do
-
-    
+    visit new_post_path
   end
 end
