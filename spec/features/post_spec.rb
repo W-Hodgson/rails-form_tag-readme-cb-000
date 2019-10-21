@@ -18,6 +18,6 @@ describe 'new_post' do
 
     click_on 'Submit Post'
 
-    expect(page.current_path)
+    expect(page.current_path).to eq(posts_path)
   end
 end
