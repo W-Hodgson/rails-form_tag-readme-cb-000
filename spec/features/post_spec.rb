@@ -17,5 +17,7 @@ describe 'new_post' do
     fill_in 'post_description', with: 'My post description'
 
     click_on 'Submit Post'
+
+    expect(page.current_path)
   end
 end
