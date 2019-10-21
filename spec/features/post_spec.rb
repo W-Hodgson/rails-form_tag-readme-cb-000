@@ -8,5 +8,6 @@ describe 'new_post' do
 
   it 'renders HTML in the /new template' do
     visit new_post_path
+    expect(page)
   end
 end
