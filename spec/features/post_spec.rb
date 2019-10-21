@@ -15,5 +15,7 @@ describe 'new_post' do
     visit new_post_path
     fill_in 'post_title', with: 'My post title'
     fill_in 'post_description', with: 'My post description'
+
+    click_on
   end
 end
